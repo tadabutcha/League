@@ -1,0 +1,25 @@
+---
+layout: default
+title: Home
+---
+<div class="">
+{% for rpost in paginator.posts %}
+  <h2 class=""><a href="{{ site.baseurl }}{{ rpost.url }}" title="{{ rpost.title }}" rel="bookmark">{{ rpost.title }}</a></h2>
+  <p class=""><time pubdate="{{ rpost.date }}">{{ rpost.date | date_to_string }}</time></p>
+  <p class="">{{ rpost.content | truncatewords:5 }}</p>
+</div>
+{% endfor %}
+
+{% if paginator.total_pages > 1 %}
+<nav class="">
+  <ul class="">
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+    <li class=""><a href="javascript:void(0);">{{ page }}</a></li>
+    {% else %}
+    <li><a href="{{ site.baseurl }}/{%if page > 1 %}page{{ page }}/{% endif %}">{{ page }}</a></li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+</nav>
+{% endif %}
