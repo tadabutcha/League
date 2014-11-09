@@ -1,4 +1,4 @@
-baseurl:          /blog
+baseurl:          /League
 
 markdown:         kramdown
 highlighter:      pygments
