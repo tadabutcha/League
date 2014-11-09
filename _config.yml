@@ -1,7 +1,7 @@
 baseurl:          /blog
 
-markdown:         rdiscount
-pygments:         true
+markdown:         kramdown
+highlighter:      pygments
 paginate:         4
 
 title:            League
