@@ -1,9 +1,9 @@
 # League
 An LoL like theme for jekyll. 
 
-(Still at work. )
+*(Still at work. )*
 
-[Check out Demo ->](#)
+<del>[Check out Demo ->](#)</del>
 
 ## Features
 * none. 

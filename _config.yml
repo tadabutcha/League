@@ -5,3 +5,4 @@ highlighter:      pygments
 paginate:         4
 
 title:            League
+description:      "an\ LoL\ like\ theme\ for\ jekyll."

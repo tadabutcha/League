@@ -18,11 +18,15 @@
     <![endif]-->
   </head>
   <body>
-
-    <div class="content">
-      {{ content }}
+    <div id="background-drop">
     </div>
-
+    <div class="container">
+      {% include header.html %}
+      <div class="content">
+        {{ content }}
+      </div>
+      {% include footer.html %}
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
